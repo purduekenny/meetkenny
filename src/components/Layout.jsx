@@ -21,6 +21,13 @@ const globalStyle = css`
   h1, h2, h3, h4, h5, h6 {
     color: ${theme.colors.black};
   }
+
+  header {
+    h1, h2, h3, h4, h5, h6 {
+      color: ${theme.colors.white};
+    }
+  }
+
   html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -42,6 +49,11 @@ const globalStyle = css`
     &:hover,
     &:focus {
       text-decoration: underline;
+    }
+  }
+  nav {
+    a {
+      color: ${theme.colors.white};
     }
   }
   @media (max-width: ${theme.breakpoints.m}) {

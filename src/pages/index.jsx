@@ -6,12 +6,23 @@ import { Layout, Listing, Wrapper, Title } from '../components'
 import website from '../../config/website'
 
 const Hero = styled.header`
-  background-color: ${(props) => props.theme.colors.greyLight};
+  background-color: ${(props) => props.theme.colors.primary};
   display: flex;
   align-items: center;
+  background-image: url('/bg/space/1.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    p {
+      color: #fff;
+      text-shadow: .1em .1em .2em rgba(0, 0, 0, 0.9);
+    }
+  }
 `
 
 const HeroInner = styled(Wrapper)`
+  position: relative;
   padding-top: 13rem;
   padding-bottom: 13rem;
   h1 {
@@ -60,12 +71,12 @@ const Social = styled.ul`
     }
     a {
       font-style: normal;
-      color: ${(props) => props.theme.colors.greyDark};
+      color: ${(props) => props.theme.colors.greyLight};
       font-size: 1.333rem;
       font-weight: 600;
       &:hover,
       &:focus {
-        color: ${(props) => props.theme.colors.primary};
+        color: ${(props) => props.theme.colors.greyDark};
         text-decoration: none;
       }
       @media (max-width: ${(props) => props.theme.breakpoints.s}) {
@@ -188,7 +199,7 @@ export const pageQuery = graphql`
           title {
             text
           }
-          date(formatString: "DD.MM.YYYY")
+          date(formatString: "MM.DD.YYYY")
           categories {
             category {
               document {

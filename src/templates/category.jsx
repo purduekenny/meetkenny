@@ -9,6 +9,11 @@ const Hero = styled.header`
   background-color: ${(props) => props.theme.colors.primary};
   padding-top: 1rem;
   padding-bottom: 4rem;
+  background-image: url('/bg/space/1.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   h1 {
     color: ${(props) => props.theme.colors.bg};
   }
@@ -17,7 +22,7 @@ const Hero = styled.header`
 const Headline = styled.p`
   font-family: 'Source Sans Pro', -apple-system, 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial',
     sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-  color: ${(props) => props.theme.colors.greyBlue};
+  color: ${(props) => props.theme.colors.white};
   font-size: 1.25rem;
   a {
     font-style: normal;

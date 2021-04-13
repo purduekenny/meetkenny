@@ -1,12 +1,12 @@
 module.exports = {
   pathPrefix: '/', // Prefix for all links. If you deploy your site to example.com/portfolio your pathPrefix should be "portfolio"
-  title: 'Gatsby Starter - Prismic.io', // Navigation and Site Title
-  titleAlt: 'Gatsby Prismic.io', // Title for JSONLD
-  description: 'A typography-heavy & light-themed Gatsby Starter which uses the Headless CMS Prismic.',
-  headline: 'Writing and publishing content for LekoArts', // Headline for schema.org JSONLD
-  url: 'https://prismic.lekoarts.de', // Domain of your site. No trailing slash!
+  title: 'Meet Kenny Wilson: Communication Professional • PMP • IT Manager • UXC', // Navigation and Site Title
+  titleAlt: 'Meet Kenny Wilson: Communication Professional • PMP • IT Manager • UXC', // Title for JSONLD
+  description: 'Learn about the professional experience of Kenny Wilson',
+  headline: 'Portflio site for Kenny Wilson', // Headline for schema.org JSONLD
+  url: 'https://meetkenny.com', // Domain of your site. No trailing slash!
   siteLanguage: 'en', // Language Tag on <html> element
-  logo: '/logos/logo-1024.png', // Used for SEO
+  logo: '/logos/icon.png', // Used for SEO
   ogLanguage: 'en_US', // Facebook Language
 
   // JSONLD / Manifest
@@ -16,9 +16,9 @@ module.exports = {
   themeColor: '#3D63AE',
   backgroundColor: '#EBEDF2',
 
-  twitter: '@starter_prismicio', // Twitter Username
-  facebook: 'gatsby-prismic', // Facebook Site Name
-  googleAnalyticsID: 'UA-47519312-7',
+  twitter: '@purduekenny', // Twitter Username
+  facebook: 'purduekenny', // Facebook Site Name
+  googleAnalyticsID: 'G-RGKCV4CY7N',
 
   skipNavId: 'reach-skip-nav', // ID for the "Skip to content" a11y feature
 }
