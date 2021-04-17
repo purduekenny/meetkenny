@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import styled from '@emotion/styled'
 import { graphql } from 'gatsby'
-import { Layout, Listing, Wrapper, Title, Resume } from '../components'
+import { Layout, Listing, Wrapper, Title, Resume, Footer } from '../components'
 import website, { backgroundColor } from '../../config/website'
 
 const Hero = styled.header`
@@ -76,7 +76,7 @@ const Social = styled.ul`
       font-weight: 600;
       &:hover,
       &:focus {
-        color: ${(props) => props.theme.colors.greyDark};
+        color: ${(props) => props.theme.colors.yellow};
         text-decoration: none;
       }
       @media (max-width: ${(props) => props.theme.breakpoints.s}) {
@@ -108,7 +108,7 @@ const IndexWrapper = Wrapper.withComponent('main')
 class Index extends Component {
   render() {
     const {
-      data: { homepage, social, posts, projects },
+      data: { homepage, social, posts, projects},
     } = this.props
     return (
       <Layout>
@@ -129,6 +129,7 @@ class Index extends Component {
           <Resume />
           <Title style={{ marginTop: '4rem' }}>Recent posts</Title>
           <Listing posts={posts.nodes} />
+          {/*
           <Title style={{ marginTop: '8rem' }}>Recent projects</Title>
           <ProjectListing>
             {projects.nodes.map((project) => (
@@ -137,6 +138,7 @@ class Index extends Component {
               </li>
             ))}
           </ProjectListing>
+            */}
         </IndexWrapper>
       </Layout>
     )

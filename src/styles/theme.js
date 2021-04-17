@@ -10,6 +10,7 @@ const theme = {
     grey: '#595C62',
     greyDark: '#888',
     greyDarker: '#111',
+    yellow: '#FFD000',
   },
   maxWidth: '1000px',
   maxWidthText: '720px',

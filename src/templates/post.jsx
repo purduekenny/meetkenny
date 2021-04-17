@@ -16,6 +16,7 @@ const Hero = styled.header`
   background-repeat: no-repeat;
   background-size: cover;
   color: ${(props) => props.theme.colors.white};
+  text-shadow: .1em .1em .2em rgba(0, 0, 0, 0.9);
 `
 
 const Headline = styled.p`
@@ -23,11 +24,22 @@ const Headline = styled.p`
     sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   color: ${(props) => props.theme.colors.white};
   font-size: 1.25rem;
+  background-color: ${(props) => props.theme.colors.secondary};
+  border-radius: 10px;
+  padding: .5em;
+  display: inline-block;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+  text-shadow: none;
+
   a {
     color: ${(props) => props.theme.colors.white};
     text-decoration: underline;
     font-style: normal;
     font-weight: normal;
+    
+    :hover {
+      color: ${(props) => props.theme.colors.yellow};
+    }
   }
 `
 

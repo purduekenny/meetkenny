@@ -16,6 +16,7 @@ const Hero = styled.header`
   background-size: cover;
   h1 {
     color: ${(props) => props.theme.colors.bg};
+    text-shadow: .1em .1em .2em rgba(0, 0, 0, 1);
   }
 `
 
@@ -23,6 +24,12 @@ const Headline = styled.p`
   font-family: 'Source Sans Pro', -apple-system, 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial',
     sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   color: ${(props) => props.theme.colors.white};
+  text-shadow: .1em .1em .2em rgba(0, 0, 0, 1);
+  background-color: ${(props) => props.theme.colors.secondary};
+  border-radius: 10px;
+  padding: .5em;
+  display: inline-block;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
   font-size: 1.25rem;
   a {
     font-style: normal;
