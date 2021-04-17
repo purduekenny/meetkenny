@@ -1,4 +1,4 @@
-#MeetKenny.com
+# MeetKenny.com
 
 Custom portfolio site built using Gatsby and Prismic. 
 
