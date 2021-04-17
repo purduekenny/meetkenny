@@ -71,13 +71,22 @@ const Social = styled.ul`
     }
     a {
       font-style: normal;
-      color: ${(props) => props.theme.colors.greyLight};
+      color: ${(props) => props.theme.colors.white};
+      text-shadow: .1em .1em .2em rgba(0, 0, 0, 1);
       font-size: 1.333rem;
-      font-weight: 600;
+      font-weight: 800;
+      background-color: ${(props) => props.theme.colors.secondary};
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: .5em;
+      display: inline-block;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
       &:hover,
       &:focus {
         color: ${(props) => props.theme.colors.yellow};
+        border: 1px solid ${(props) => props.theme.colors.yellow};
         text-decoration: none;
+        background-color: ${(props) => props.theme.colors.primary}
       }
       @media (max-width: ${(props) => props.theme.breakpoints.s}) {
         font-size: 1.2rem;
