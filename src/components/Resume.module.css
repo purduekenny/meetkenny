@@ -8,7 +8,24 @@
     display: grid;
     column-gap: 2rem;
     grid-template-columns: 15% auto;
+}
 
+@media (max-width: 900px) {
+    .card {
+        grid-template-columns: 100%;
+        text-align: center;;
+    }
+
+    .graphic {
+        width: 40%;
+        padding: 2em;
+    }
+}
+
+@media (max-width: 600px) {
+    .graphic {
+        display: none;
+    }
 }
 
 .graphic {
