@@ -9,7 +9,7 @@ const Hero = styled.header`
   background-color: ${(props) => props.theme.colors.primary};
   padding-top: 1rem;
   padding-bottom: 4rem;
-  background-image: url('/bg/space/1.png');
+  background-image: url('/bg/space/1.webp');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
