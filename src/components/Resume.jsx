@@ -18,8 +18,8 @@ function Resume () {
     return (
         <div className={styles.resumeHighlight}>
             <ResumeBlock name="Communication Professional" color="green" graphic="./assets/comm.png" alt='sattelite in space' description="I have my Master's of Science in Strategic Communication from Brian Lamb School of Communication at Purdue University. Additionally, I have nearly a decade of experience working with a full-service communication department. I have significant experience planning, managing, and delivering successful projects."></ResumeBlock>
-            <ResumeBlock name="Project Management Professional" color="border-color:red" graphic="./assets/pm.png" alt='sattelite in space' description="I have my Project Management Professional (PMP) certification from the PMI. I love managing creative projects and creative people."></ResumeBlock>
-            <ResumeBlock name="User Experience Certified" color="yellow" graphic="./assets/ux.png" alt='sattelite in space'description="Not only do I focus on my audience when drafting communication plans, but also when creating solutions. I have a certification for User Experience from Nielsen Norman Group."></ResumeBlock>
+            <ResumeBlock name="Agile Project Management Professional" color="border-color:red" graphic="./assets/pm.png" alt='sattelite in space' description="I have my Project Management Professional (PMP) certification and my Agile Certified Practitioner (PMI-ACP) certification from the PMI. I love managing creative projects and creative people."></ResumeBlock>
+            <ResumeBlock name="User Experience Certified" color="yellow" graphic="./assets/ux.png" alt='sattelite in space'description="Not only do I focus on my audience when drafting communication plans, but also when creating solutions for the products I manage. I have a certification for User Experience from Nielsen Norman Group."></ResumeBlock>
         </div>
     )
 }
