@@ -204,7 +204,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    posts: allPrismicPost(sort: { fields: [data___date], order: DESC }) {
+    posts: allPrismicPost(sort: { fields: [data___date], order: DESC}, limit: 5) {
       nodes {
         uid
         data {
